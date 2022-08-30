@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css')}}">
+
+    <title>{{titulo}}</title>
+</head>
+<body>
+
+  <form action="/soma" method="post">
+    <label for="number1" >Número 1:</label>
+    <input type="number" name="num1" class="form-control" id="number1" placeholder="Informe um Número"/>
+
+    <label for="number2" >Número 2:</label>
+    <input type="number" name="num2" class="form-control" id="number2" placeholder="Informe um Número"/>
+
+    <button type="submit" class="botao">SOMAR</button>
+
+    <label id="result" >{{resultado}}</label>
+
+  </form>
+
+</body>
+</html>
